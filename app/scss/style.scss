@@ -143,19 +143,55 @@
         padding: 12px 27px;
         background-color: #fff;
         box-shadow: 0px 2px 5px 0px rgba(202, 215, 228, 0.75);
-        transition: all .5s;
+        transition: all .2s;
         &+li {
             margin-left: 8px;
+        }
+        a {
+            color: $bg;
+            font-size: 14px;
         }
     }
     li:hover {
         background-color: $red;
+        a {
+            color: #fff;
+        }
     }
-    a {
-        color: $bg;
-        font-size: 14px;
+}
+
+.newest__inner-gallery {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #000;
+}
+
+.gallery__item {
+    max-width: 442px;
+    border: 1px solid #000;
+}
+
+.item__title {
+    display: inline-block;
+    &-name {
+        text-align: left;
+        width: 300px;
+        border: 1px solid #000;
     }
-    a:hover {
-        color: #fff;
+    &-coast {
+        width: 70px;
+        border: 1px solid #000;
     }
+}
+
+.product__name {
+    font-size: 18px;
+    font-weight: 500;
+    color: $bg;
+    width: 325px;
+}
+
+.product__link {
+    font-size: 14px;
+    color: #8bc34a;
 }
