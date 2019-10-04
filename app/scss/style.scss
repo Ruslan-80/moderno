@@ -2,6 +2,10 @@
 @import 'global';
 @import 'fonts';
 //  start header
+.header {
+    background-color: #fff;
+}
+
 .header__top-inner {
     display: flex;
     justify-content: space-between;
@@ -110,6 +114,7 @@
 }
 
 .basket {
+    margin-right: 20px;
     span {
         background-color: $green;
     }
@@ -127,7 +132,6 @@
 }
 
 .user {
-    margin-left: 20px;
     margin-right: 25px;
     padding-right: 20px;
     position: relative;
@@ -207,6 +211,7 @@
     border-top: 1px solid #e0e0e0;
     height: 0;
     overflow: hidden;
+    z-index: 1;
 }
 
 .basket__box,
@@ -324,6 +329,11 @@
 
 .icons-color::before {
     color: $tomate;
+}
+
+.header__btn-menu,
+.menu-btn {
+    display: none;
 }
 
 //  end header
@@ -1228,3 +1238,5 @@ button.icon-unsorted {
         }
     }
 }
+
+@import 'media';
