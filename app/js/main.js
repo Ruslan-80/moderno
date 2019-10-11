@@ -81,9 +81,9 @@ $(function() {
 
     $('input[type="file"], select').styler();
 
-
-
-
+    new WOW({
+        offset: 200
+    }).init();
 
     var mixer = mixitup('.products__inner-box');
 

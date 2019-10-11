@@ -6,6 +6,11 @@
     background-color: #fff;
 }
 
+.header__top {
+    position: relative;
+    overflow-x: hidden;
+}
+
 .header__top-inner {
     display: flex;
     justify-content: space-between;
@@ -546,6 +551,23 @@
 .products .products__item {
     flex-basis: calc(25% - 30px);
     margin-left: 30px;
+    animation-name: fadeInUp;
+    &:nth-child(1),
+    &:nth-child(5) {
+        animation-delay: 0.3s;
+    }
+    &:nth-child(2),
+    &:nth-child(6) {
+        animation-delay: 0.5s;
+    }
+    &:nth-child(3),
+    &:nth-child(7) {
+        animation-delay: 0.7s;
+    }
+    &:nth-child(4),
+    &:nth-child(8) {
+        animation-delay: 0.9s;
+    }
 }
 
 .products__item {
@@ -669,6 +691,16 @@
     }
 }
 
+.product-slaider__inner {
+    .products__item {
+        animation-name: zoomIn;
+    }
+}
+
+.product-slider_title {
+    animation-name: fadeInLeftBig;
+}
+
 //  end product-slider
 //  start adventeges
 .adventeges {
@@ -678,6 +710,7 @@
 
 .adventeges__title {
     color: #fff;
+    animation-name: rubberBand;
 }
 
 .adventeges__inner {
@@ -689,6 +722,16 @@
     max-width: 370px;
     text-align: center;
     padding: 0px 15px;
+    animation-delay: 0.3s;
+    &:nth-child(2) {
+        animation-name: zoomIn;
+    }
+    &:nth-child(1) {
+        animation-name: fadeInLeftBig;
+    }
+    &:nth-child(3) {
+        animation-name: fadeInRightBig;
+    }
     &:hover {
         .adventeges__item-images {
             background-color: $green;
@@ -793,9 +836,21 @@
         max-width: 370px;
         width: 100%;
     }
+    .tutorial__title {
+        animation-name: rubberBand;
+    }
 }
 
 .tutorial__item {
+    &:nth-child(2) {
+        animation-name: zoomIn;
+    }
+    &:nth-child(1) {
+        animation-name: fadeInLeftBig;
+    }
+    &:nth-child(3) {
+        animation-name: fadeInRightBig;
+    }
     &-images {
         min-height: 270px;
         background-repeat: no-repeat;

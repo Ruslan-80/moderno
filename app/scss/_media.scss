@@ -497,6 +497,17 @@
     }
 }
 
+@media (min-width: 601px) {
+    .product-one__tabs .tabs {
+        display: flex;
+        text-align: center;
+        border: 1px solid #d7d7d7;
+    }
+    .product-one__tabs .tabs .tab+.tab {
+        border-top: none;
+    }
+}
+
 @media (min-width: 840px) {
     .menu__list {
         display: block !important;
