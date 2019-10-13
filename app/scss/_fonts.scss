@@ -117,20 +117,16 @@
     content: "\f0c0";
 }
 
+.icon-caret-down:before {
+    content: "\f0d7";
+}
+
 .icon-sort:before {
     content: "\f0dc";
 }
 
 .icon-unsorted:before {
     content: "\f0dc";
-}
-
-.icon-sort-desc:before {
-    content: "\f0dd";
-}
-
-.icon-sort-down:before {
-    content: "\f0dd";
 }
 
 .icon-linkedin:before {
@@ -187,10 +183,6 @@
 
 .icon-rmb:before {
     content: "\f157";
-}
-
-.icon-caret-down:before {
-    content: "\f0d7";
 }
 
 .icon-yen:before {

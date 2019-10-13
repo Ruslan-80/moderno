@@ -51,6 +51,7 @@ $(function() {
 
     $('.icon-th-list').on('click', function() {
         $('.products__item').addClass('list');
+        $('.product-page__items').css('maxHeight', '1600px');
         $('.icon-th-list').addClass('active');
         $('.icon-th-large').removeClass('active');
 
@@ -58,6 +59,7 @@ $(function() {
 
     $('.icon-th-large').on('click', function() {
         $('.products__item').removeClass('list');
+        $('.product-page__items').css('maxHeight', '');
         $('.icon-th-large').addClass('active');
         $('.icon-th-list').removeClass('active');
     });
@@ -82,7 +84,8 @@ $(function() {
     $('input[type="file"], select').styler();
 
     new WOW({
-        offset: 200
+        offset: 200,
+        mobile: false
     }).init();
 
     var mixer = mixitup('.products__inner-box');
